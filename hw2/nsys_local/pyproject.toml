@@ -1,0 +1,15 @@
+[project]
+name = "nsys"
+version = "0.1.0"
+description = "Project-local nsys shim"
+requires-python = ">=3.11"
+
+[project.scripts]
+nsys = "nsys_local.cli:main"
+
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["nsys_local"]

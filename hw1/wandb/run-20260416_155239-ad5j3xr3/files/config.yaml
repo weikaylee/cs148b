@@ -1,0 +1,161 @@
+_wandb:
+    value:
+        cli_version: 0.21.2
+        e:
+            smjvva9mdob3x1ows27cfqeu5quke4qu:
+                apple:
+                    ecpuCores: 4
+                    gpuCores: 16
+                    memoryGb: 24
+                    name: Apple M4 Pro
+                    pcpuCores: 8
+                    ramTotalBytes: "25769803776"
+                    swapTotalBytes: "18253611008"
+                args:
+                    - --train-data
+                    - checkpoints/hparam_search_real/preprocessed/TinyStoriesV2-GPT4-train_ids_uint16.npy
+                    - --val-data
+                    - checkpoints/hparam_search_real/preprocessed/TinyStoriesV2-GPT4-valid_ids_uint16.npy
+                    - --output-dir
+                    - checkpoints/hparam_search_second_pass_wandb_online
+                    - --vocab-size
+                    - "10000"
+                    - --context-length
+                    - "256"
+                    - --d-model
+                    - "512"
+                    - --num-layers
+                    - "4"
+                    - --num-heads
+                    - "8"
+                    - --d-ff
+                    - "2048"
+                    - --device
+                    - auto
+                    - --batch-size
+                    - "32"
+                    - --max-steps
+                    - "2500"
+                    - --eval-interval
+                    - "100"
+                    - --eval-steps
+                    - "20"
+                    - --log-interval
+                    - "100"
+                    - --save-interval
+                    - "500"
+                    - --grad-clip
+                    - "1.0"
+                    - --learning-rates
+                    - "8e-5"
+                    - "1e-4"
+                    - --warmup-steps-list
+                    - "100"
+                    - --beta1-list
+                    - "0.9"
+                    - --beta2-list
+                    - "0.95"
+                    - "0.98"
+                    - --adam-eps-list
+                    - "1e-8"
+                    - --weight-decay-list
+                    - "0.05"
+                    - "0.1"
+                    - --min-lr-ratio
+                    - "0.1"
+                    - --max-trials
+                    - "8"
+                    - --use-wandb
+                    - --wandb-project
+                    - eecs148b-hw1-second-pass
+                    - --wandb-run-name
+                    - second-pass-online
+                cpu_count: 12
+                cpu_count_logical: 12
+                disk:
+                    /:
+                        total: "494384795648"
+                        used: "233515216896"
+                email: kaywei@caltech.edu
+                executable: /Users/kaywei/Documents/School/cs148b/hw1/.venv/bin/python3
+                git:
+                    commit: 301c4fcfd22bebc4fb69e76e9ac1f2694fc8ebce
+                    remote: https://github.com/weikaylee/cs148b.git
+                host: Kaylees-MacBook-Pro.local
+                memory:
+                    total: "25769803776"
+                os: macOS-15.7.3-arm64-arm-64bit-Mach-O
+                program: -m eecs148b_hw1.hparam_search_lm
+                python: CPython 3.13.11
+                root: /Users/kaywei/Documents/School/cs148b/hw1
+                startedAt: "2026-04-16T22:52:39.559193Z"
+                writerId: smjvva9mdob3x1ows27cfqeu5quke4qu
+        m: []
+        python_version: 3.13.11
+        t:
+            "1":
+                - 1
+            "2":
+                - 1
+            "3":
+                - 2
+                - 13
+                - 16
+            "4": 3.13.11
+            "5": 0.21.2
+            "12": 0.21.2
+            "13": darwin-arm64
+adam_eps:
+    value: 1e-08
+batch_size:
+    value: 32
+beta1:
+    value: 0.9
+beta2:
+    value: 0.95
+context_length:
+    value: 256
+d_ff:
+    value: 2048
+d_model:
+    value: 512
+device:
+    value: mps
+eval_interval:
+    value: 100
+eval_steps:
+    value: 20
+grad_clip:
+    value: 1
+learning_rate:
+    value: 8e-05
+log_interval:
+    value: 100
+max_steps:
+    value: 2500
+min_lr:
+    value: 8.000000000000001e-06
+num_heads:
+    value: 8
+num_layers:
+    value: 4
+output_dir:
+    value: checkpoints/hparam_search_second_pass_wandb_online/trial_001
+save_interval:
+    value: 500
+train_data:
+    value: checkpoints/hparam_search_real/preprocessed/TinyStoriesV2-GPT4-train_ids_uint16.npy
+use_wandb:
+    value: true
+val_data:
+    value: checkpoints/hparam_search_real/preprocessed/TinyStoriesV2-GPT4-valid_ids_uint16.npy
+vocab_size:
+    value: 10000
+wandb_project:
+    value: eecs148b-hw1-second-pass
+wandb_run_name:
+    value: second-pass-online_001
+warmup_steps:
+    value: 100
+weight_decay:
+    value: 0.05

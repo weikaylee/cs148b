@@ -1,0 +1,35 @@
+{
+  "num_examples": 128,
+  "mean_format_reward": 0.8281,
+  "mean_answer_reward": 0.0703,
+  "category_counts": {
+    "format1_answer1": 9,
+    "format1_answer0": 97,
+    "format0_answer0": 22
+  },
+  "think_answer_numeric_match_rate": 0.4219,
+  "sample_rows": [
+    {
+      "index": 0,
+      "prompt": "A conversation between User and Assistant...",
+      "generation": "<think>I need to add 5 + 3 = 8</think><answer>8</answer>",
+      "gold_answer": "The answer is 8.",
+      "format_reward": 1.0,
+      "answer_reward": 1.0,
+      "think_text": "I need to add 5 + 3 = 8",
+      "answer_text": "8",
+      "think_answer_numeric_match": true
+    },
+    {
+      "index": 1,
+      "prompt": "A conversation between User and Assistant...",
+      "generation": "<think>This is a complex problem. Let me work through it step by step. First, I need to understand the setup.</think><answer>42</answer>",
+      "gold_answer": "The answer is 35.",
+      "format_reward": 1.0,
+      "answer_reward": 0.0,
+      "think_text": "This is a complex problem. Let me work through it step by step. First, I need to understand the setup.",
+      "answer_text": "42",
+      "think_answer_numeric_match": false
+    }
+  ]
+}

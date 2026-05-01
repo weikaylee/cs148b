@@ -1,0 +1,13 @@
+{
+  "model_name": "Qwen/Qwen2.5-Math-1.5B",
+  "split": "train",
+  "num_examples": 256,
+  "reward_impl": "fallback_local_parser (repo grader unavailable)",
+  "mean_format_reward": 0.3164,
+  "mean_answer_reward": 0.0156,
+  "category_counts": {
+    "format1_answer1": 4,
+    "format1_answer0": 77,
+    "format0_answer0": 175
+  }
+}

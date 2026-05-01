@@ -1,0 +1,68 @@
+{
+  "num_examples": 64,
+  "k": 5,
+  "mean_format_reward": 0.8438,
+  "mean_answer_reward": 0.1094,
+  "category_counts": {
+    "format1_answer1": 7,
+    "format1_answer0": 47,
+    "format0_answer0": 10
+  },
+  "tie_rate": 0.0938,
+  "avg_top_vote_fraction": 0.7625,
+  "sample_rows": [
+    {
+      "index": 0,
+      "prompt": "A conversation between User and Assistant...",
+      "gold_answer": "The answer is 100.",
+      "k_generations": [
+        "<think>5 * 20 = 100</think><answer>100</answer>",
+        "<think>4 * 25 = 100</think><answer>100</answer>",
+        "<think>10 * 10 = 100</think><answer>100</answer>",
+        "<think>2 * 50 = 100</think><answer>100</answer>",
+        "<think>50 + 50 = 100</think><answer>100</answer>"
+      ],
+      "parsed_answers": [
+        "100",
+        "100",
+        "100",
+        "100",
+        "100"
+      ],
+      "vote_counter": {
+        "100": 5
+      },
+      "majority_answer": "100",
+      "top_votes": 5,
+      "format_reward": 1.0,
+      "answer_reward": 1.0
+    },
+    {
+      "index": 1,
+      "prompt": "A conversation between User and Assistant...",
+      "gold_answer": "The answer is 25.",
+      "k_generations": [
+        "<think>5 * 5 = 25</think><answer>25</answer>",
+        "<think>Let me compute this. 5 * 5 = 25</think><answer>25</answer>",
+        "<think>25</think><answer>25</answer>",
+        "<think>20 + 5 = 25</think><answer>26</answer>",
+        "<think>5 * 5 = 25, yes that's right</think><answer>25</answer>"
+      ],
+      "parsed_answers": [
+        "25",
+        "25",
+        "25",
+        "26",
+        "25"
+      ],
+      "vote_counter": {
+        "25": 4,
+        "26": 1
+      },
+      "majority_answer": "25",
+      "top_votes": 4,
+      "format_reward": 1.0,
+      "answer_reward": 1.0
+    }
+  ]
+}

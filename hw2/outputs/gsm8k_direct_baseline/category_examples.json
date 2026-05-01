@@ -1,0 +1,48 @@
+{
+  "format1_answer1_examples": [
+    {
+      "index": 42,
+      "prompt": "Please answer with ONLY the answer enclosed in <answer> </answer> tags. \nQuestion: What is 2 + 2?",
+      "generation": "2 + 2 = 4<answer>4</answer>",
+      "gold_answer": "4",
+      "format_reward": 1.0,
+      "answer_reward": 1.0
+    }
+  ],
+  "format1_answer0_examples": [
+    {
+      "index": 15,
+      "prompt": "Please answer with ONLY the answer enclosed in <answer> </answer> tags. \nQuestion: If Sarah has 5 apples and gives 2 to Tom, how many does she have left?",
+      "generation": "Sarah starts with 5 apples. After giving 2 to Tom, she has 5 - 2 = 3 apples left. <answer>3</answer>",
+      "gold_answer": "Sarah has 3 apples left. **5 - 2 = 3**",
+      "format_reward": 1.0,
+      "answer_reward": 0.0
+    },
+    {
+      "index": 27,
+      "prompt": "Please answer with ONLY the answer enclosed in <answer> </answer> tags. \nQuestion: What is the square root of 16?",
+      "generation": "The square root of 16 is 4. <answer>4.0</answer>",
+      "gold_answer": "The answer is 4.",
+      "format_reward": 1.0,
+      "answer_reward": 0.0
+    }
+  ],
+  "format0_answer0_examples": [
+    {
+      "index": 8,
+      "prompt": "Please answer with ONLY the answer enclosed in <answer> </answer> tags. \nQuestion: Solve the equation 2x + 5 = 13",
+      "generation": "To solve 2x + 5 = 13: Subtract 5 from both sides: 2x = 8. Divide by 2: x = 4. But wait, I need to check this... yes x = 4 is correct.",
+      "gold_answer": "x = 4",
+      "format_reward": 0.0,
+      "answer_reward": 0.0
+    },
+    {
+      "index": 19,
+      "prompt": "Please answer with ONLY the answer enclosed in <answer> </answer> tags. \nQuestion: A store has a 20% discount on all items. If an item costs $50, what is the final price?",
+      "generation": "20% of $50 is $10, so the discount is $10. The final price is $50 - $10 = $40 <answer>$40</answer> wait that's wrong let me recalculate",
+      "gold_answer": "The final price is $40.",
+      "format_reward": 0.0,
+      "answer_reward": 0.0
+    }
+  ]
+}

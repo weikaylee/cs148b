@@ -1,0 +1,52 @@
+{
+  "os":  "macOS-15.7.3-arm64-arm-64bit-Mach-O",
+  "python":  "CPython 3.13.11",
+  "startedAt":  "2026-04-15T20:40:18.757469Z",
+  "args":  [
+    "--train-data",
+    "data/TinyStoriesV2-GPT4-train.txt",
+    "--val-data",
+    "data/TinyStoriesV2-GPT4-valid.txt",
+    "--output-dir",
+    "checkpoints/hparam_search_real",
+    "--device",
+    "auto",
+    "--use-wandb",
+    "--wandb-run-name",
+    "real",
+    "--max-trials",
+    "10",
+    "--max-steps",
+    "20"
+  ],
+  "program":  "-m eecs148b_hw1.hparam_search_lm",
+  "git":  {
+    "remote":  "https://github.com/weikaylee/cs148b.git",
+    "commit":  "301c4fcfd22bebc4fb69e76e9ac1f2694fc8ebce"
+  },
+  "email":  "kaywei@caltech.edu",
+  "root":  "/Users/kaywei/Documents/School/cs148b/hw1",
+  "host":  "Kaylees-MacBook-Pro.local",
+  "executable":  "/Users/kaywei/Documents/School/cs148b/hw1/.venv/bin/python3",
+  "cpu_count":  12,
+  "cpu_count_logical":  12,
+  "disk":  {
+    "/":  {
+      "total":  "494384795648",
+      "used":  "221370392576"
+    }
+  },
+  "memory":  {
+    "total":  "25769803776"
+  },
+  "apple":  {
+    "name":  "Apple M4 Pro",
+    "ecpuCores":  4,
+    "pcpuCores":  8,
+    "gpuCores":  16,
+    "memoryGb":  24,
+    "swapTotalBytes":  "17179869184",
+    "ramTotalBytes":  "25769803776"
+  },
+  "writerId":  "8wbrn27vb4oa5383hye58ujhuka4vf5g"
+}

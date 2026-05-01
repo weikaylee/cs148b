@@ -1,0 +1,160 @@
+_wandb:
+    value:
+        cli_version: 0.21.2
+        e:
+            s0kwd9aa2j40c7ishldto1wlh8chq1ln:
+                apple:
+                    ecpuCores: 4
+                    gpuCores: 16
+                    memoryGb: 24
+                    name: Apple M4 Pro
+                    pcpuCores: 8
+                    ramTotalBytes: "25769803776"
+                    swapTotalBytes: "19327352832"
+                args:
+                    - --train-data
+                    - checkpoints/hparam_search_real/preprocessed/TinyStoriesV2-GPT4-train_ids_uint16.npy
+                    - --val-data
+                    - checkpoints/hparam_search_real/preprocessed/TinyStoriesV2-GPT4-valid_ids_uint16.npy
+                    - --output-dir
+                    - checkpoints/no_layernorm_same_lr_online
+                    - --vocab-size
+                    - "10000"
+                    - --context-length
+                    - "256"
+                    - --d-model
+                    - "768"
+                    - --num-layers
+                    - "6"
+                    - --num-heads
+                    - "12"
+                    - --d-ff
+                    - "3072"
+                    - --model-variant
+                    - no_layernorm
+                    - --device
+                    - auto
+                    - --batch-size
+                    - "24"
+                    - --learning-rate
+                    - "8e-5"
+                    - --min-lr
+                    - "8e-6"
+                    - --warmup-steps
+                    - "200"
+                    - --weight-decay
+                    - "0.05"
+                    - --beta1
+                    - "0.9"
+                    - --beta2
+                    - "0.98"
+                    - --adam-eps
+                    - "1e-8"
+                    - --max-steps
+                    - "2000"
+                    - --eval-interval
+                    - "100"
+                    - --eval-steps
+                    - "20"
+                    - --log-interval
+                    - "100"
+                    - --save-interval
+                    - "500"
+                    - --grad-clip
+                    - "1.0"
+                    - --use-wandb
+                    - --wandb-project
+                    - eecs148b-hw1-noln
+                    - --wandb-run-name
+                    - no-ln-same-lr
+                cpu_count: 12
+                cpu_count_logical: 12
+                disk:
+                    /:
+                        total: "494384795648"
+                        used: "248529801216"
+                email: kaywei@caltech.edu
+                executable: /Users/kaywei/Documents/School/cs148b/hw1/.venv/bin/python3
+                git:
+                    commit: 9468908b7f193422864b0c55bbb458b32eec6b90
+                    remote: https://github.com/weikaylee/cs148b.git
+                host: Kaylees-MacBook-Pro.local
+                memory:
+                    total: "25769803776"
+                os: macOS-15.7.3-arm64-arm-64bit-Mach-O
+                program: -m eecs148b_hw1.train_lm
+                python: CPython 3.13.11
+                root: /Users/kaywei/Documents/School/cs148b/hw1
+                startedAt: "2026-04-17T03:25:59.463431Z"
+                writerId: s0kwd9aa2j40c7ishldto1wlh8chq1ln
+        m: []
+        python_version: 3.13.11
+        t:
+            "1":
+                - 1
+            "2":
+                - 1
+            "3":
+                - 2
+                - 13
+                - 16
+            "4": 3.13.11
+            "5": 0.21.2
+            "12": 0.21.2
+            "13": darwin-arm64
+adam_eps:
+    value: 1e-08
+batch_size:
+    value: 24
+beta1:
+    value: 0.9
+beta2:
+    value: 0.98
+context_length:
+    value: 256
+d_ff:
+    value: 3072
+d_model:
+    value: 768
+device:
+    value: mps
+eval_interval:
+    value: 100
+eval_steps:
+    value: 20
+grad_clip:
+    value: 1
+learning_rate:
+    value: 8e-05
+log_interval:
+    value: 100
+max_steps:
+    value: 2000
+min_lr:
+    value: 8e-06
+model_variant:
+    value: no_layernorm
+num_heads:
+    value: 12
+num_layers:
+    value: 6
+output_dir:
+    value: checkpoints/no_layernorm_same_lr_online
+save_interval:
+    value: 500
+train_data:
+    value: checkpoints/hparam_search_real/preprocessed/TinyStoriesV2-GPT4-train_ids_uint16.npy
+use_wandb:
+    value: true
+val_data:
+    value: checkpoints/hparam_search_real/preprocessed/TinyStoriesV2-GPT4-valid_ids_uint16.npy
+vocab_size:
+    value: 10000
+wandb_project:
+    value: eecs148b-hw1-noln
+wandb_run_name:
+    value: no-ln-same-lr
+warmup_steps:
+    value: 200
+weight_decay:
+    value: 0.05
