@@ -1,0 +1,29 @@
+# §4 — RESISC45 fine-tuning. Used for full FT, LoRA, and linear probe runs.
+# `--method` is set on the command line; this config provides shared settings.
+
+num_classes: 45
+
+optim:
+  # Shared default LR for all three methods (the writeup asks us to use the
+  # SAME lr by default). Override per run with `--lr` if a method is dramatically
+  # worse, and report the tuning.
+  lr: 1.0e-4
+  weight_decay: 0.01
+  betas: [0.9, 0.999]
+  warmup_steps: 100
+  scheduler: cosine
+
+train:
+  batch_size: 128
+  num_epochs: 10
+  num_workers: 4
+  log_every: 25
+  eval_every_epoch: 1
+
+# Suggested tuned LRs to try via `--lr` if a method's accuracy is dramatically
+# worse than the others. These are NOT auto-applied — the script defaults to
+# `optim.lr` above unless `--lr` is passed explicitly.
+methods_tuned_suggestions:
+  linear_probe: 1.0e-3   # tiny # of trainable params -> tolerates higher LR
+  lora:         1.0e-4
+  full_ft:      5.0e-5   # full backbone -> smaller LR avoids forgetting
