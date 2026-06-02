@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(unset VIRTUAL_ENV VIRTUAL_ENV_PROMPT)",
+      "Bash(uv run *)",
+      "Bash(python3 *)"
+    ]
+  }
+}
